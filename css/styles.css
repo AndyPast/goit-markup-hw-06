@@ -382,7 +382,7 @@ ul {
 .box-hero {
   max-width: 1600px;
   height: 600px;
-  margin-left: 0px;
+  margin: 0px;
   background-size: contain;
   padding-top: 0px;
   padding-bottom: 94px;
@@ -411,6 +411,7 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 6%;
   color: var(--background-color);
 }
 
@@ -450,6 +451,9 @@ ul {
 
   background-color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 /* Описание преимуществ */
@@ -611,6 +615,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
 
@@ -672,17 +677,21 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+
 .client__cards:hover,
 .client__cards:focus {
   border: 1px solid var(--secondary-color);
 }
+
 .client__label {
   fill: rgba(175, 177, 184, 1);
 }
+
 .client__cards:hover .client__label,
 .client__cards:focus .client__label {
   fill: var(--secondary-color);
 }
+
 .client__item {
   display: flex;
   width: 100%;
@@ -1141,6 +1150,14 @@ ul {
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.data-modal-open {
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .modal__close {
