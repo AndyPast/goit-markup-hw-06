@@ -146,7 +146,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* font-size: 14px; */
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.17;
@@ -204,14 +204,14 @@ ul {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-functio);
 }
 
 .logo-header:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .header .link.current.studio:hover,
@@ -269,6 +269,7 @@ ul {
 }
 
 .link {
+  font-size: 16px;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -335,6 +336,7 @@ ul {
 
 .header__link__mail,
 .header__link__tel {
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,6 +494,7 @@ ul {
 }
 
 .text-script {
+  font-size: 14px;
   line-height: 1.72;
   color: var(--contacts-color);
 }
@@ -615,6 +618,8 @@ ul {
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
@@ -1152,11 +1157,6 @@ ul {
   transition-timing-function: var(--transition-timing-function);
 }
 
-/* .data-modal-open {
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-} */
-
 .modal__close {
   position: absolute;
   width: 30px;
@@ -1213,18 +1213,30 @@ ul {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-50%);
 
+  transform: translateY(-50%);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+
+.field__input:hover,
+.field__input:focus {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.field__icon:hover,
+.field__icon:focus {
+  color: var(--secondary-color);
+}
+
 .input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+
 .input:focus {
   border-color: var(--body-text-color);
 }
@@ -1235,9 +1247,7 @@ ul {
 .field__input:focus {
   border-color: var(--body-text-color);
 }
-.field__input:focus + .field__icon {
-  fill: var(--body-text-color);
-}
+
 .message {
   padding: 12px 16px;
   height: 120px;
@@ -1315,7 +1325,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* size button */
+
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
