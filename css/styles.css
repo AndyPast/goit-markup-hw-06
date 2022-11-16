@@ -273,7 +273,9 @@ ul {
 }
 
 .link {
-  font-size: 16px;
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 2%;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -340,7 +342,9 @@ ul {
 
 .header__link__mail,
 .header__link__tel {
-  font-size: 16px;
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,6 +452,7 @@ ul {
 
   text-decoration: none;
 
+  font-weight: 700px;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
@@ -516,9 +521,10 @@ ul {
 /* Чем мы занимаемся */
 
 .text-main {
-  font-weight: bold;
+  font-weight: 700px;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 3%;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
@@ -791,7 +797,7 @@ ul {
   letter-spacing: 0.03em;
   display: inline-block;
   margin-top: 9px;
-  color: var(--contacts-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .tel-footer:focus,
